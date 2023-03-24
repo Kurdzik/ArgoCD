@@ -2,6 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: frontend-app
+  namespace: argocd
   annotations:
     argocd-image-updater.argoproj.io/image-list: frontend=192.168.44.44:8082/repo123/frontend
     argocd-image-updater.argoproj.io/frontend.update-strategy: latest
